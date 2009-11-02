@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<svg height="70mm" width="430mm" >
+ <g style="fill-opacity:1.0; stroke:black;
+  stroke-width:1mm;">
+  <circle cx="21mm" cy="41mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="108mm" cy="50mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="238mm" cy="8mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="304mm" cy="59mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="407mm" cy="44mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="186mm" cy="8mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="228mm" cy="51mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="370mm" cy="59mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="295mm" cy="36mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="171mm" cy="43mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="154mm" cy="6mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="198mm" cy="17mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="115mm" cy="59mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="396mm" cy="50mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="51mm" cy="60mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="280mm" cy="16mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="219mm" cy="10mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="0mm" cy="51mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="202mm" cy="26mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="183mm" cy="50mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="357mm" cy="39mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="205mm" cy="54mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="3mm" cy="19mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="240mm" cy="29mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="53mm" cy="18mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="83mm" cy="64mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="80mm" cy="13mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="46mm" cy="27mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="70mm" cy="39mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <circle cx="398mm" cy="64mm" r="1.500000mm"
+    style="fill:#000;"  />
+  <line x1="5" y1="5" x2="300" y2="5" />
+ </g>
+</svg>

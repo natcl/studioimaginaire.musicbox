@@ -7,7 +7,7 @@ is to construct a scene, add objects to it, and then write it to a file
 to display it.
 
 This program uses ImageMagick to display the SVG files. ImageMagick also 
-does a remarkable job of converting SVG files into other formats.
+does a remarkable job of converting SVG files into other units.
 """
 
 import os
@@ -15,9 +15,10 @@ import random
 display_prog = 'display' # Command to execute to display images.
       
 class Scene:
-    def __init__(self,name="svg",height=400,width=400):
+    def __init__(self,name="svg",unit='px',height=400,width=400):
         self.name = name
         self.items = []
+        self.unit = unit
         self.height = height
         self.width = width
         return
@@ -26,9 +27,9 @@ class Scene:
 
     def strarray(self):
         var = ["<?xml version=\"1.0\"?>\n",
-               "<svg height=\"%d\" width=\"%d\" >\n" % (self.height,self.width),
+               "<svg height=\"%d%s\" width=\"%d%s\" >\n" % (self.height,self.unit,self.width,self.unit),
                " <g style=\"fill-opacity:1.0; stroke:black;\n",
-               "  stroke-width:1;\">\n"]
+               "  stroke-width:%d%s;\">\n" % (1, self.unit)]
         for item in self.items: var += item.strarray()            
         var += [" </g>\n</svg>\n"]
         return var
@@ -67,7 +68,7 @@ class Circle:
         return
 
     def strarray(self):
-        return ["  <circle cx=\"%d\" cy=\"%d\" r=\"%d\"\n" %\
+        return ["  <circle cx=\"%dmm\" cy=\"%dmm\" r=\"%fmm\"\n" %\
                 (self.center[0],self.center[1],self.radius),
                 "    style=\"fill:%s;\"  />\n" % colorstr(self.color)]
 
@@ -102,11 +103,12 @@ class Text:
 def colorstr(rgb): return "#%x%x%x" % (rgb[0]/16,rgb[1]/16,rgb[2]/16)
 
 def test():
-    scene = Scene('test', height = 70, width = 430)
+    scene = Scene('svg_output', unit = 'mm', height = 70, width = 430)
     for x in range(30):
-    	scene.add(Circle((random.randint(0,430),random.randint(0,70)),3,(255,0,255)))
+    	scene.add(Circle((random.randint(0,430),random.randint(6,64)),1.5,(0,0,0)))
+    scene.add(Line((5,5),(300,5)))
     scene.write_svg()
-    scene.display()
+    #scene.display()
     return
 
 if __name__ == '__main__': test()
