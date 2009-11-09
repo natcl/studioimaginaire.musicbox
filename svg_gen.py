@@ -41,7 +41,7 @@ class Scene:
             self.svgname = filename
         else:
             self.svgname = self.name + ".svg"
-        file = open('/Users/Nat/Source/musicbox/'+ self.svgname,'w')
+        file = open('/Users/Nat/Source/musicbox/' + self.svgname,'w')
         file.writelines(self.strarray())
         file.close()
         return
